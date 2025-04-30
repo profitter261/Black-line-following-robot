@@ -12,7 +12,6 @@
 #define L_S 2 // Left sensor
 
 //In the loop section, declare the pin modes of each pin. Here, we need to read the output of IR sensors, hence I have defined those pins as an input. The motor needs to be driven by the Arduino, thus defining the motor driver pins as output. Finally, I pulled enable pin to high.
-
 pinMode(R_S, INPUT);
 pinMode(L_S, INPUT);
 pinMode(enA, OUTPUT);
@@ -26,25 +25,21 @@ digitalWrite(enB, HIGH);
 
 //In the loop section, we first read the values of IR sensors and then using ‘if condition’ control the movement of motor as per our requirements. The four movement conditions are explained below.
 //Moving forward:
-
 if((digitalRead(R_S) == 0)&&(digitalRead(L_S) == 0)){forward();}
 
 //In this case, if Right Sensor and Left Sensor are on top of white colour then the robot should move in the forward direction, so we call the forward function.
 //(Note : here 0 means output of IR sensor is high as the sensor is on white surface)
 
 //Turning towards Right Side:
-
 if((digitalRead(R_S) == 1)&&(digitalRead(L_S) == 0)){turnRight();}
 
 //if Right Sensor is detecting Black and Left Sensor is not detecting any black line, then it will call the Right function, initiating the protocol for making right turn by calling turnRight function.
 
 //Turning towards Left side:
-
 if((digitalRead(R_S) == 0)&&(digitalRead(L_S) == 1)){turnLeft();}
 //if Right Sensor is over white and the Left Sensor is detecting Black then it will call turnLeft function. It will initiate the steps for turning the robot in left direction.
 
 //Stopping the Robot:
-
 if((digitalRead(R_S) == 1)&&(digitalRead(L_S) == 1)){Stop();}
 //If the Right Sensor and Left Sensor are on the Black color then it will call the Stop function. In this case, the robot will come to a complete halt.
 //We have defined the 4 functions of the robot as Forward, turnLeft, turnRight and Stop. The code to perform these functions are given below:
