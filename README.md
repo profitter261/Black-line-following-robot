@@ -11,12 +11,16 @@ This setup serves as part of an automation or robotic system, where the ultrason
 
 ### Moving Forward
 <p align="center"> <img src="https://github.com/profitter261/Black-line-following-robot/blob/main/Images/image%206.jpg?raw=true" alt="Moving Forward" width="500"> <br> <em>Figure 1: Both sensors detect white surface — robot moves forward</em> </p>
+
 ### Turning Left
 <p align="center"> <img src="https://github.com/profitter261/Black-line-following-robot/blob/main/Images/image%203.png?raw=true" alt="Turning Left" width="500"> <br> <em>Figure 2: Left sensor detects black line — robot turns left</em> </p>
+
 ### Turning Right
 <p align="center"> <img src="https://github.com/profitter261/Black-line-following-robot/blob/main/Images/image%204.png?raw=true" alt="Turning Right" width="500"> <br> <em>Figure 3: Right sensor detects black line — robot turns right</em> </p>
+
 ### Stopping
 <p align="center"> <img src="https://github.com/profitter261/Black-line-following-robot/blob/main/Images/image%205.png?raw=true" alt="Stopping" width="500"> <br> <em>Figure 4: Both sensors detect black line — robot stops</em> </p>
+
 The robot's movement is steady and reliable. The system utilizes a hobby robot chassis, motor wheels, and a castor wheel for smooth motion and stability. The entire system is designed to be tested and optimized using the Wokwi simulator before implementation on the physical conveyor. Integrating IoT enhances real-time monitoring and control, ensuring seamless material flow and reducing human intervention during the loading process.
 
 ## Software Used / Tools / Components Required
